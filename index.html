@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perfume Company</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Perfume Company</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <button onclick="addToCart('perfume1')">Add to Cart</button>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Perfume Company</h2>
+        <p>Discover our collection of exquisite perfumes for men and women.</p>
+    </section>
+
+    <section id="products">
+        <div class="product">
+            <img src="perfume1.jpg" alt="Perfume Men 1">
+            <div>
+                <h3>AZZARO Chrome Eau de Toilette Spray for Men by Azzaro</h3>
+                <p>More specific details about the perfume.</p>
+                <button onclick="addToCart('perfume1')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="perfume2.jpg" alt="Perfume Men 2">
+            <div>
+                <h3>Brit Eau de Toilette Spray for Men by Burberry</h3>
+                <p>More specific details about the perfume.</p>
+                <button onclick="addToCart('perfume2')">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Add more product sections here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Perfume Company. All rights reserved.</p>
+        <p>For Men | For Women</p>
+    </footer>
+
+    <script>
+        // JavaScript code
+        function addToCart(productId) {
+            // Implement your addToCart logic here
+            alert('Added to cart: ' + productId);
+        }
+    </script>
+</body>
+</html>
